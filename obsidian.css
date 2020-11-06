@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
   --default-font: "Inter", sans-serif;
-  --font-monospace: "Jetbrains Mono", monospace;
+  --font-monospace: "Source Code Pro", monospace;
 }
 
 .theme-dark {
@@ -978,6 +978,65 @@ button.mod-cta:hover {
   background-color: unset !important;
   padding: unset !important;
   margin: unset !important;
+}
+
+/* Naked Embeds DEATH AU*/
+.markdown-embed-title {
+  display: none;
+}
+
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.markdown-preview-view .markdown-embed-content {
+  max-height: unset;
+}
+
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+img.wrap {
+  max-width: 70%;
+  margin: 20px 0px;
+}
+
+img.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+img.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+img:responsive {
+  width: 80%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-width: 0px 4px 6px 0px;
+  border-style: solid;
+  border-radius: 0 !important;
+  border-color: var(--background-primary);
+  min-height: 40px;
 }
 
 /*# sourceMappingURL=obsidian.css.map */

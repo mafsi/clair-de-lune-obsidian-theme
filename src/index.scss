@@ -2,7 +2,7 @@
 
 :root {
   --default-font: "Inter", sans-serif;
-  --font-monospace: "Jetbrains Mono", monospace;
+  --font-monospace: "Source Code Pro", monospace;
 }
 
 .theme-dark {
@@ -56,3 +56,6 @@
 
 @import "./modules/extensions/calendar.scss";
 @import "./modules/extensions/todoist.scss";
+@import "./modules/preview/naked_embeds.scss";
+@import "./modules/preview/responsive_image.scss";
+@import "./modules/preview/scrollbar.scss";
