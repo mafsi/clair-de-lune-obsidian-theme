@@ -1,4 +1,4 @@
-@use '../../colors.scss';
+@import "../../colors.scss";
 
 .pane-clickable-item:hover {
   background-color: $gray-5;
