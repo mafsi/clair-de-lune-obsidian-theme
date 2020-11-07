@@ -348,6 +348,10 @@ rect.actor,
   stroke: #444a73 !important;
 }
 
+.cluster rect {
+  stroke: #444a73 !important;
+}
+
 text.actor {
   color: #c8d3f5;
 }
