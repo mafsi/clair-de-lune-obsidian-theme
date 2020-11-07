@@ -1,3 +1,4 @@
+
 @import "../../colors.scss";
 
 @mixin base-tag {
@@ -10,6 +11,7 @@
   text-transform: uppercase;
 }
 
+
 @mixin status-tag($content) {
   font-size: 0;
   padding: 0;
@@ -17,12 +19,13 @@
   &:after {
     @include base-tag();
     content: $content;
+    }
   }
-}
 
 .tag {
   @include base-tag();
 }
+
 
 .tag[href="#conspect"] {
   @include status-tag("◩ CONSPECT");
