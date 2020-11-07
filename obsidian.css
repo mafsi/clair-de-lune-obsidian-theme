@@ -1039,4 +1039,19 @@ img:responsive {
   min-height: 40px;
 }
 
+/* unify background to Graph Controls & remove border */
+.graph-controls {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  padding: 8px 16px 8px 8px;
+  background-color: #1e2030;
+  min-width: 140px;
+  max-width: 240px;
+  border: none;
+  border-radius: 6px;
+  max-height: calc(100% - 16px);
+  overflow: auto;
+}
+
 /*# sourceMappingURL=obsidian.css.map */

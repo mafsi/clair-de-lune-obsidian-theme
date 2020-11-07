@@ -1,15 +1,17 @@
 /* unify background to Graph Controls & remove border */
-@import "./../../colors.css"
+@import "./../../colors.scss";
 
-.graph-controls {
+.graph-controls 
+{
   position: absolute;
   left: 8px;
   top: 8px;
   padding: 8px 16px 8px 8px;
-  background-color: var(--background-primary);
+  background-color: $gray-3;
   min-width: 140px;
   max-width: 240px;
-  border: none;/*1px solid var(--background-modifier-border);*/
+  border: none;
   border-radius: 6px;
   max-height: calc(100% - 16px);
   overflow: auto;
+}
