@@ -7,6 +7,7 @@
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
+  text-transform: uppercase;
 }
 
 @mixin status-tag($content) {
