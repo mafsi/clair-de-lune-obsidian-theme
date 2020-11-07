@@ -7,6 +7,7 @@
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
+  text-transform: uppercase;
 }
 
 @mixin status-tag($content) {
@@ -23,20 +24,20 @@
   @include base-tag();
 }
 
-.tag[href="#drafting"] {
-  @include status-tag("◩ DRAFTING");
+.tag[href="#conspect"] {
+  @include status-tag("◩ CONSPECT");
 }
 
-.tag[href="#complete"] {
-  @include status-tag("◼ COMPLETE");
+.tag[href="#complet"] {
+  @include status-tag("◼ COMPLET");
 }
 
-.tag[href="#archived"] {
-  @include status-tag("◻ ARCHIVED");
+.tag[href="#vechi"] {
+  @include status-tag("◻ VECHI");
 }
 
-.tag[href="#seedling"] {
-  @include status-tag("🌱 SEEDLING");
+.tag[href="#procesare"] {
+  @include status-tag("🌱 PROCESARE");
 }
 
 .tag[href="#evergreen"] {

@@ -261,10 +261,13 @@
   font-size: 0.85em;
   color: #a9b8e8;
 }
-.markdown-preview-view h1,
-.markdown-preview-view h2 {
+.markdown-preview-view h1 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid #444a73;
+}
+.markdown-preview-view h2 {
+  padding-bottom: 0.3em;
+  /*border-bottom: 1px solid $gray-6;*/
 }
 .markdown-preview-view .heading-collapse-indicator {
   color: #7a88cf;
@@ -488,6 +491,85 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
+}
+
+.tag[href="#drafting"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#drafting"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◩ DRAFTING";
+}
+
+.tag[href="#complete"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#complete"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◼ COMPLETE";
+}
+
+.tag[href="#archived"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#archived"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◻ ARCHIVED";
+}
+
+.tag[href="#seedling"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#seedling"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌱 SEEDLING";
+}
+
+.tag[href="#evergreen"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#evergreen"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌲 EVERGREEN";
+}
+
+.tag {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
   text-transform: uppercase;
 }
 
@@ -564,6 +646,89 @@ path.relation {
   letter-spacing: -0.05ch;
   text-transform: uppercase;
   content: "🌲 EVERGREEN";
+}
+
+img.wrap {
+  max-width: 70%;
+  margin: 20px 0px;
+}
+
+img.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+img.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+img:responsive {
+  width: 80%;
+  height: auto;
+}
+
+/* Naked Embeds DEATH AU*/
+.markdown-embed-title {
+  display: none;
+}
+
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.markdown-preview-view .markdown-embed-content {
+  max-height: unset;
+}
+
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-width: 0px 4px 6px 0px;
+  border-style: solid;
+  border-radius: 0 !important;
+  border-color: var(--background-primary);
+  min-height: 40px;
+}
+
+/*Bullet list relationship lines*/
+.cm-hmd-list-indent .cm-tab, ul ul {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+  content: "";
+  border-left: 1px solid;
+  color: #828bb8;
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+  left: 0;
+  top: -5px;
+  bottom: -4px;
+}
+
+ul ul::before {
+  left: -11px;
+  top: 0;
+  bottom: 0;
 }
 
 .markdown-preview-view {
@@ -848,6 +1013,21 @@ button.mod-cta:hover {
   border-top: 1px solid #191a2a;
 }
 
+/* unify background to Graph Controls & remove border */
+.graph-controls {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  padding: 8px 16px 8px 8px;
+  background-color: #1e2030;
+  min-width: 140px;
+  max-width: 240px;
+  border: none;
+  border-radius: 6px;
+  max-height: calc(100% - 16px);
+  overflow: auto;
+}
+
 /* Support for https://github.com/liamcain/obsidian-calendar-plugin */
 #calendar-container .title div.arrow {
   color: #7a88cf;
@@ -984,104 +1164,6 @@ button.mod-cta:hover {
   background-color: unset !important;
   padding: unset !important;
   margin: unset !important;
-}
-
-/* Naked Embeds DEATH AU*/
-.markdown-embed-title {
-  display: none;
-}
-
-.markdown-preview-view .markdown-embed {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.markdown-preview-view .markdown-embed-content {
-  max-height: unset;
-}
-
-.markdown-preview-view .markdown-embed-content > :first-child {
-  margin-top: 0;
-}
-
-.markdown-preview-view .markdown-embed-content > :last-child {
-  margin-bottom: 0;
-}
-
-img.wrap {
-  max-width: 70%;
-  margin: 20px 0px;
-}
-
-img.align-right {
-  float: right;
-  margin-left: 20px;
-}
-
-img.align-left {
-  float: left;
-  margin-right: 20px;
-}
-
-img:responsive {
-  width: 80%;
-  height: auto;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--background-primary);
-}
-
-::-webkit-scrollbar-thumb {
-  border-width: 0px 4px 6px 0px;
-  border-style: solid;
-  border-radius: 0 !important;
-  border-color: var(--background-primary);
-  min-height: 40px;
-}
-
-/* unify background to Graph Controls & remove border */
-.graph-controls {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  padding: 8px 16px 8px 8px;
-  background-color: #1e2030;
-  min-width: 140px;
-  max-width: 240px;
-  border: none;
-  border-radius: 6px;
-  max-height: calc(100% - 16px);
-  overflow: auto;
-}
-
-/*Bullet list relationship lines*/
-.cm-hmd-list-indent .cm-tab, ul ul {
-  position: relative;
-}
-
-.cm-hmd-list-indent .cm-tab::before, ul ul::before {
-  content: "";
-  border-left: 1px solid;
-  color: #828bb8;
-  position: absolute;
-}
-
-.cm-hmd-list-indent .cm-tab::before {
-  left: 0;
-  top: -5px;
-  bottom: -4px;
-}
-
-ul ul::before {
-  left: -11px;
-  top: 0;
-  bottom: 0;
 }
 
 /*# sourceMappingURL=obsidian.css.map */
