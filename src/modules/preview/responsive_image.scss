@@ -1,19 +1,23 @@
-
-img { $display: block;}
+img {
+  $display: block;
+}
 
 img.wrap {
- max-width: 70%;
- margin: 20px 0px;
+  max-width: 70%;
+  margin: 20px 0px;
 }
 
 img.align-right {
- float: right;
- margin-left: 20px;
+  float: right;
+  margin-left: 20px;
 }
 
 img.align-left {
- float: left;
- margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
-img:responsive {  width: 80%;  height: auto; }
+img:responsive {
+  width: 80%;
+  height: auto;
+}
