@@ -131,7 +131,7 @@
 }
 
 .markdown-preview-view ul > li.task-list-item {
-  margin-left: 0em;
+  margin-left: 0;
 }
 .markdown-preview-view ul > li.task-list-item input[type=checkbox] {
   appearance: none;
@@ -293,8 +293,8 @@
 }
 .markdown-preview-view a.external-link {
   background-image: none;
-  background-size: 0px;
-  padding-right: 0px;
+  background-size: 0;
+  padding-right: 0;
 }
 .markdown-preview-view a.internal-link {
   text-decoration: none;
@@ -889,6 +889,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   border-left: none;
 }
 
+.graph-view {
+  /* &.color-circle {
+    }
+  */
+}
 .graph-view.color-line {
   color: #7a88cf;
 }
