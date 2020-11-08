@@ -723,7 +723,7 @@ path.relation {
 
 img.wrap {
   max-width: 70%;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 img.align-right {
@@ -849,7 +849,7 @@ button.mod-warning:hover {
 }
 
 body.plugin-sliding-panes .mod-root .workspace-leaf {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px 10px !important;
 }
 body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header {
   border-right: 1px solid rgba(195, 232, 141, 0.5) !important;
