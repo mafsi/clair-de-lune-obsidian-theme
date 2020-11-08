@@ -317,7 +317,6 @@
   list-style: none;
 }
 .markdown-preview-view ul li:not(.task-list-item)::before {
-  content: "•";
   color: #7a88cf;
   font-weight: bold;
   display: inline-block;
