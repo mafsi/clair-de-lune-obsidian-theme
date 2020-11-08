@@ -1,12 +1,10 @@
-
 @import "../../colors.scss";
 @import "../preview/tags.scss";
-
 
 .tag {
   @include base-tag();
   text-transform: uppercase;
- }
+}
 
 .tag[href="#conspect"] {
   @include status-tag("◩ CONSPECT");

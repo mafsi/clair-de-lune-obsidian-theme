@@ -11,7 +11,9 @@ rect.actor,
   stroke: $gray-6 !important;
 }
 
-.cluster rect {stroke: $gray-6 !important;}
+.cluster rect {
+  stroke: $gray-6 !important;
+}
 
 text.actor {
   color: $text-primary;
