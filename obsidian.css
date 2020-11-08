@@ -244,9 +244,12 @@
 }
 .markdown-preview-view h1 {
   font-size: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #444a73;
 }
 .markdown-preview-view h2 {
   font-size: 1.5em;
+  padding-bottom: 0.3em;
 }
 .markdown-preview-view h3 {
   font-size: 1.25em;
@@ -260,14 +263,6 @@
 .markdown-preview-view h6 {
   font-size: 0.85em;
   color: #a9b8e8;
-}
-.markdown-preview-view h1 {
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #444a73;
-}
-.markdown-preview-view h2 {
-  padding-bottom: 0.3em;
-  /*border-bottom: 1px solid $gray-6;*/
 }
 .markdown-preview-view .heading-collapse-indicator {
   color: #7a88cf;
