@@ -2,6 +2,8 @@
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jamiebrynes7/clair-de-lune-obsidian-theme?style=for-the-badge)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/mafsi/clair-de-lune-obsidian-theme/badge)](https://www.codefactor.io/repository/github/mafsi/clair-de-lune-obsidian-theme)
+
 A dark theme for [Obsidian](https://obsidian.md/) inspired by the [Moonlight](https://github.com/atomiks/moonlight-vscode-theme) family of themes.
 
 ![](./assets/screenshot.png)
