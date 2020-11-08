@@ -574,6 +574,85 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
+}
+
+.tag[href="#drafting"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#drafting"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◩ DRAFTING";
+}
+
+.tag[href="#complete"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#complete"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◼ COMPLETE";
+}
+
+.tag[href="#archived"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#archived"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◻ ARCHIVED";
+}
+
+.tag[href="#seedling"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#seedling"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌱 SEEDLING";
+}
+
+.tag[href="#evergreen"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#evergreen"]:after {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌲 EVERGREEN";
+}
+
+.tag {
+  font-size: 9pt;
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
   text-transform: uppercase;
 }
 
@@ -588,7 +667,6 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  text-transform: uppercase;
   content: "◩ CONSPECT";
 }
 
@@ -603,7 +681,6 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  text-transform: uppercase;
   content: "◼ COMPLET";
 }
 
@@ -618,7 +695,6 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  text-transform: uppercase;
   content: "◻ VECHI";
 }
 
@@ -633,7 +709,6 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  text-transform: uppercase;
   content: "🌱 PROCESARE";
 }
 
@@ -648,7 +723,6 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  text-transform: uppercase;
   content: "🌲 EVERGREEN";
 }
 
