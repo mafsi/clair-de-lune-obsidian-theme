@@ -25,3 +25,7 @@
 .tag[href="#evergreen"] {
   @include status-tag("🌲 EVERGREEN");
 }
+
+.tag[href="#literal"] {
+  @include status-tag("⛔ LITERAL");
+}
