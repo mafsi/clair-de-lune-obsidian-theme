@@ -325,6 +325,8 @@
 }
 .markdown-preview-view .list-collapse-indicator {
   color: #7a88cf;
+  margin-left: -42px;
+  padding-left: 4px;
 }
 
 span.math.math-block {
@@ -801,7 +803,7 @@ ul ul::before {
 }
 
 ul ul::before {
-  left: -11px;
+  left: -15px;
   top: 0;
   bottom: 0;
 }
