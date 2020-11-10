@@ -271,7 +271,7 @@
   border: none;
 }
 .markdown-preview-view .markdown-embed .markdown-preview-view {
-  padding: 0px;
+  padding: 0;
 }
 .markdown-preview-view .markdown-embed-link {
   top: 12px;
