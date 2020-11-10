@@ -3,12 +3,12 @@
 .cm-s-obsidian {
   font-family: var(--font-monospace);
   color: $text-paragraph;
-  font-size: 11pt;
+  font-size: var(--font-editor-size);
   line-height: 1.5em;
 
   .CodeMirror-linenumber {
     color: rgba($indigo, 0.5);
-    font-size: medium;
+    font-size: var(--font-editor-linenumbers-size);
   }
 
   .CodeMirror-gutter-elt {
@@ -30,7 +30,7 @@
   .cm-header-4,
   .cm-header-5,
   .cm-header-6 {
-    font-size: 11pt;
+    font-size: var(--font-editor-size);
     line-height: 1.5em;
   }
 
@@ -62,14 +62,42 @@
 
   pre.HyperMD-codeblock {
     line-height: 1.5em;
-    font-size: 11pt;
+    font-size: var(--font-editor-size);
   }
 
   span.cm-hmd-codeblock,
   span.cm-hmd-indented-code,
   span.cm-math,
   pre.HyperMD-codeblock {
-    color: $purple;
+    color: $text-secondary;
+
+    span.cm-keyword {
+      color: $purple !important;
+    }
+
+    span.cm-def {
+      color: $text-primary !important;
+    }
+
+    span.cm-variable {
+      color: $sky-blue !important;
+    }
+
+    span.cm-operator {
+      color: $cyan !important;
+    }
+
+    span.cm-number {
+      color: $orange !important;
+    }
+
+    span.cm-string {
+      color: $green !important;
+    }
+
+    span.cm-comment {
+      color: $indigo !important;
+    }
   }
 
   .cm-quote {

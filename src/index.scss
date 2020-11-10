@@ -2,7 +2,24 @@
 
 :root {
   --default-font: "Inter", sans-serif;
-  --font-monospace: "Source Code Pro", monospace;
+  --font-monospace: "Jetbrains Mono", monospace;
+
+  --font-editor-size: 11pt;
+  --font-editor-linenumbers-size: medium;
+
+  --font-h1-preview-size: 2em;
+  --font-h2-preview-size: 1.5em;
+  --font-h3-preview-size: 1.25;
+  --font-h4-preview-size: 1em;
+  --font-h5-preview-size: 0.875em;
+  --font-h6-preview-size: 0.85em;
+  --font-math-preview-size: 18px;
+  --font-tag-preview-size: 9pt;
+  --font-hover-preview-size: 0.9em;
+  --font-prompts-size: 14px;
+
+  --font-todoist-title-size: 1em;
+  --font-todoist-metadata-size: small;
 }
 
 .theme-dark {
@@ -53,6 +70,6 @@
 @import "./modules/editor/index.scss";
 @import "./modules/preview/index.scss";
 @import "./modules/ui/index.scss";
+
 @import "./modules/extensions/calendar.scss";
 @import "./modules/extensions/todoist.scss";
-@import "./modules/export/index.scss";
