@@ -779,23 +779,6 @@ path.relation {
   content: "🌲 EVERGREEN";
 }
 
-<<<<<<< HEAD
-.tag[href="#literal"] {
-  font-size: 0;
-  padding: 0;
-}
-.tag[href="#literal"]:after {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
-  content: "⛔ LITERAL";
-}
-
-=======
->>>>>>> parent of 7f68342... added new ro-tag
 img.wrap {
   max-width: 70%;
   margin: 20px 0;
