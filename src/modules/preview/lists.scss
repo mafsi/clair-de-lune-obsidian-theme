@@ -9,11 +9,11 @@
   }
 
   ul {
-   //list-style: none;
-      list-style: disc;
+    //list-style: none;
+    list-style: disc;
 
     li:not(.task-list-item)::before {
-     //content: "\2024";
+      //content: "\2024";
       color: $indigo;
       font-weight: bold;
       display: inline-block;
