@@ -7,11 +7,11 @@
 }
 
 .tag[href="#conspect"] {
-  @include status-tag("◩ CONSPECT");
+  @include status-tag("◪ CONSPECT");
 }
 
 .tag[href="#complet"] {
-  @include status-tag("◼ COMPLET");
+  @include status-tag("✍ COMPLET");
 }
 
 .tag[href="#vechi"] {
@@ -29,4 +29,3 @@
 .tag[href="#literal"] {
   @include status-tag("⛔ LITERAL");
 }
-
