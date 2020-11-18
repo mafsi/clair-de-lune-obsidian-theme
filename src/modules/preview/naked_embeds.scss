@@ -1,23 +1,20 @@
 /* Naked Embeds DEATH AU*/
 .markdown-embed-title {
-	display: none;
+  display: none;
 }
-
-.markdown-preview-view .markdown-embed {
-	border: none;
-	padding: 0;
-	margin: 0;
+.markdown-preview-view {
+  .markdown-embed {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .markdown-embed-content {
+    max-height: unset;
+    & > :first-child {
+      margin-top: 0;
+    }
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
 }
-
-.markdown-preview-view .markdown-embed-content {
-	max-height: unset;
-}
-
-.markdown-preview-view .markdown-embed-content > :first-child {
-	margin-top: 0;
-}
-
-.markdown-preview-view .markdown-embed-content > :last-child {
-	margin-bottom: 0;
-}
-
