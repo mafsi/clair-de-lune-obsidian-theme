@@ -1,0 +1,31 @@
+@import "../../colors.scss";
+@import "../preview/tags.scss";
+
+.tag {
+  @include base-tag();
+  text-transform: uppercase;
+}
+
+.tag[href="#conspect"] {
+  @include status-tag("◪ CONSPECT");
+}
+
+.tag[href="#complet"] {
+  @include status-tag("✍ COMPLET");
+}
+
+.tag[href="#vechi"] {
+  @include status-tag("◻ VECHI");
+}
+
+.tag[href="#procesare"] {
+  @include status-tag("🌱 PROCESARE");
+}
+
+.tag[href="#evergreen"] {
+  @include status-tag("🌲 EVERGREEN");
+}
+
+.tag[href="#literal"] {
+  @include status-tag("⛔ LITERAL");
+}
