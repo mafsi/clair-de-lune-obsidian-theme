@@ -720,7 +720,7 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  content: "◪ CONSPECT";
+  content: "🍃 CONSPECT";
 }
 
 .tag[href="#complet"] {
@@ -748,7 +748,7 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-  content: "◻ VECHI";
+  content: "🍂 VECHI";
 }
 
 .tag[href="#procesare"] {
