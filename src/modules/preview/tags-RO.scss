@@ -29,3 +29,7 @@
 .tag[href="#literal"] {
   @include status-tag("⛔ LITERAL");
 }
+
+.tag[href="#moc"] {
+  @include status-tag("🌍 MOC");
+}
