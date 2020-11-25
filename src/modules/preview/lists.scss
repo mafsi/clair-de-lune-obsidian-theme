@@ -24,7 +24,8 @@
 
   .list-collapse-indicator {
     color: $indigo;
-    margin-left: -42px;
-    padding-left: 4px;
+  }
+  li > p {
+    display: inline;
   }
 }
