@@ -9,11 +9,10 @@
   }
 
   ul {
-    //list-style: none;
-    list-style: disc;
+    list-style: none;
 
     li:not(.task-list-item)::before {
-      //content: "\2024";
+      content: "\2022";
       color: $indigo;
       font-weight: bold;
       display: inline-block;
@@ -24,7 +23,9 @@
 
   .list-collapse-indicator {
     color: $indigo;
-    margin-left: -42px;
-    padding-left: 4px;
+  }
+
+  li > p {
+    display: inline;
   }
 }

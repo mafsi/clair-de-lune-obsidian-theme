@@ -112,7 +112,7 @@
 .cm-s-obsidian span.cm-hmd-indented-code,
 .cm-s-obsidian span.cm-math,
 .cm-s-obsidian pre.HyperMD-codeblock {
-  color: #b4c2f0;
+  color: #828bb8;
 }
 .cm-s-obsidian span.cm-hmd-codeblock span.cm-keyword,
 .cm-s-obsidian span.cm-hmd-indented-code span.cm-keyword,
@@ -203,7 +203,7 @@
   top: 6px;
   line-height: 0;
   margin-right: 5px;
-  margin-left: -6px;
+  margin-left: -27px;
 }
 .markdown-preview-view ul > li.task-list-item input[type=checkbox]:hover {
   background-color: rgba(130, 170, 255, 0.5) !important;
@@ -221,9 +221,9 @@
 }
 
 .markdown-preview-view :not(pre) > code {
-  color: #e2e8fa;
-  background-color: #444a73;
-  border-color: #131421;
+  color: #c8d3f5;
+  background-color: #191a2a;
+  border: 1px solid #131421;
   margin: 0.4em;
   font-family: var(--font-monospace);
   padding: 0.2em 0.4em;
@@ -330,6 +330,9 @@
   min-height: 200px;
   width: 600px;
 }
+.popover.hover-popover .markdown-embed {
+  height: unset;
+}
 .popover.hover-popover > .markdown-embed {
   height: 500px;
   font-size: var(--font-hover-preview-size);
@@ -382,8 +385,9 @@
 }
 .markdown-preview-view .list-collapse-indicator {
   color: #7a88cf;
-  margin-left: -42px;
-  padding-left: 4px;
+}
+.markdown-preview-view li > p {
+  display: inline;
 }
 
 span.math.math-block {
@@ -900,12 +904,42 @@ ul ul::before {
   color: #7a88cf;
 }
 
-button.mod-warning {
-  background-color: #ff98a4;
-  color: #191a2a;
+.modal button:not(.mod-cta):not(.mod-warning),
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+button:not(.mod-cta):not(.mod-warning) {
+  background-color: #191a2a;
+  border: 1px solid #131421;
 }
+.modal button:not(.mod-cta):not(.mod-warning):hover,
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning):hover,
+button:not(.mod-cta):not(.mod-warning):hover {
+  background-color: #1e2030;
+}
+.modal button.mod-warning,
+.modal.mod-settings button.mod-warning,
+button.mod-warning {
+  border: 1px solid #ff757f;
+  color: #ff757f;
+  background-color: #191a2a;
+}
+.modal button.mod-warning:hover,
+.modal.mod-settings button.mod-warning:hover,
 button.mod-warning:hover {
-  background-color: #ff757f;
+  color: #ff98a4;
+  background-color: #1e2030;
+}
+.modal button.mod-cta,
+.modal.mod-settings button.mod-cta,
+button.mod-cta {
+  border: 1px solid #7a88cf;
+  color: #e2e8fa;
+  background-color: #191a2a;
+}
+.modal button.mod-cta:hover,
+.modal.mod-settings button.mod-cta:hover,
+button.mod-cta:hover {
+  color: #e2e8fa;
+  background-color: #1e2030;
 }
 
 .view-header {
@@ -1083,16 +1117,6 @@ input:hover {
   background-color: #1e2030;
 }
 
-button.mod-cta {
-  background-color: #6777c8;
-  color: #e2e8fa;
-}
-
-button.mod-cta:hover {
-  background-color: #7a88cf;
-  color: #e2e8fa;
-}
-
 .suggestion-container {
   background-color: #1e2030;
   border: 1px solid #131421;
@@ -1198,21 +1222,20 @@ button.mod-cta:hover {
 }
 
 /* Support for https://github.com/liamcain/obsidian-calendar-plugin */
-#calendar-container .title div.arrow {
+#calendar-container .title .year {
   color: #7a88cf;
 }
-#calendar-container .title div.arrow:hover {
-  color: #50c4fa;
+#calendar-container div.arrow svg {
+  color: #7a88cf;
 }
 #calendar-container tr td:not(:empty) {
   border-radius: 5px;
 }
+#calendar-container tr td:not(:empty).today {
+  color: #c3e88d;
+}
 #calendar-container tr td:not(:empty).active {
   background-color: #444a73 !important;
-}
-#calendar-container tr td:not(:empty).today {
-  background-color: #222436 !important;
-  color: #50c4fa;
 }
 #calendar-container tr td:not(:empty):hover {
   background-color: #2f334d !important;
@@ -1280,7 +1303,6 @@ button.mod-cta:hover {
 .task-metadata {
   font-size: var(--font-todoist-metadata-size);
   color: #7a88cf;
-  margin-left: 20px;
 }
 
 .task-metadata > * {
