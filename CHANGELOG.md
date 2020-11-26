@@ -16,6 +16,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🔁 Changes
 
 - Tweaked how embedded blocks are rendered.
+- Tweaked how code blocks are rendered in preview mode.
+- Unified how buttons are rendered in Obsidian.
+- Updated [calendar](https://github.com/liamcain/obsidian-calendar-plugin) styling to support v1.3.0/v1.3.1
+
+### 🐛 Bugfixes
+
+- Fixed some issues introduced by Obsidian v0.9.15
+- Fixed a bug where block embeds in hover popups were incorrectly sized.
 
 ## [1.2.1] - 2020-11-05
 
