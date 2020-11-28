@@ -320,6 +320,7 @@
 .markdown-preview-view h2 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid #444a73;
+  display: block;
 }
 .markdown-preview-view .heading-collapse-indicator {
   color: #7a88cf;
