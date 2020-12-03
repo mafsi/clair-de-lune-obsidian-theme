@@ -7,23 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2020-12-03
+
+Tested against Obsidian v0.9.20, other versions should work, but you results may vary!
+
 ### ✨ Features
 
 - Font sizes set by this theme are now controllable by CSS variables. See [index.scss](./src/index.scss) for details.
 - Restyled code blocks and added support for [Editor Syntax Highlight Obsidian Plugin](https://github.com/deathau/cm-editor-syntax-highlight-obsidian).
 - Drag-n-drop operations in the file browser are styled in keeping with the theme.
+- Added support for `textarea` elements.
 
 ### 🔁 Changes
 
 - Tweaked how embedded blocks are rendered.
 - Tweaked how code blocks are rendered in preview mode.
 - Unified how buttons are rendered in Obsidian.
-- Updated [calendar](https://github.com/liamcain/obsidian-calendar-plugin) styling to support v1.3.0/v1.3.1
+- Updated [calendar](https://github.com/liamcain/obsidian-calendar-plugin) styling to support v1.3/v1.4
 
 ### 🐛 Bugfixes
 
 - Fixed some issues introduced by Obsidian v0.9.15
 - Fixed a bug where block embeds in hover popups were incorrectly sized.
+- Fixed an issues where **bold** or _italics_ in headings could cause strange formatting.
 
 ## [1.2.1] - 2020-11-05
 
