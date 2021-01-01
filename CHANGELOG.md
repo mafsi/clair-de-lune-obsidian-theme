@@ -7,26 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.4.0] - 2020-12-31
-
-Tested against Obsidian v0.10.4, other versions should work, but your results may vary!
-
-### ✨ Features
-
-- Added support for query blocks.
-
-### 🔁 Changes
-
-- Updated [Todoist plugin](https://github.com/jamiebrynes7/obsidian-todoist-plugin) styling to support v1.6.
-- Updated color variables used by Obsidian & other plugins.
-
-### 🐛 Bugfixes
-
-- Removed erroneous margin around inline code elements.
-
 ## [1.3.0] - 2020-12-03
 
-Tested against Obsidian v0.9.20, other versions should work, but your results may vary!
+Tested against Obsidian v0.9.20, other versions should work, but you results may vary!
 
 ### ✨ Features
 
