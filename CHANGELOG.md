@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.1] - 2021-01-08
+
+Tested against Obsidian v0.10.7, other versions should work, but your results may vary!
+
+### 🐛 Bugfixes
+
+- Active files are correctly highlighted in the file hierarchy.
+- Fixed search, query, and backlinks styling.
+- Removed erroneous outline around code fence blocks in edit mode.
+
 ## [1.4.0] - 2020-12-31
 
 Tested against Obsidian v0.10.4, other versions should work, but your results may vary!
