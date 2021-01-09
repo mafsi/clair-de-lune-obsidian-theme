@@ -176,6 +176,19 @@
   font-family: var(--font-monospace);
 }
 
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top: none;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-left: none;
+  border-right: none;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: none;
+}
+
 .markdown-preview-view blockquote {
   padding: 10px;
   border: unset;
@@ -1031,7 +1044,7 @@ body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header {
   display: none;
 }
 
-.nav-file.is-active .nav-file-title {
+.nav-file-title.is-active {
   background-color: #444a73;
 }
 
@@ -1126,13 +1139,12 @@ textarea:hover {
   color: #7a88cf;
 }
 
-.pane-list-item-ending-flair {
+.tree-item-flair {
   background-color: #444a73;
-  min-width: 2ch;
   text-align: center;
 }
 
-.search-result-file-title:hover {
+.tree-item-self.is-clickable:hover {
   background-color: #2f334d;
 }
 
