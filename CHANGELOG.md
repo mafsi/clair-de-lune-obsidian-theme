@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 🐛 Bugfixes
+
+- Tasks are now correctly indented.
+- Links in quote elements are hightlighted correctly in edit mode.
+
+## [1.5.0] - 2021-01-24
+
+### ✨ Features
+
+- Added relationship lines to the tag pane when tags are nested.
+- Updated design for search result & backlinks snippets.
+- Updated design for window selector tabs.
+- Added support for built-in frontmatter.
+- Added relationship lines to nested bullet points in preview mode.
+
+### 🔁 Changes
+
+- Added some additional spacing between `li` elements in preview mode.
+- Tweak `input` and `textarea` element styling.
+- Updated calendar plugin styling.
+- Increased the indentation of nested lists to make them more prominent.
+- Softened the color of `hr` elements and the borders under `h1`, and `h2` elements.
+
+### 🐛 Bugfixes
+
+- Macro tokens are correctly highlighted in code blocks.
+
 ## [1.4.1] - 2021-01-08
 
 Tested against Obsidian v0.10.7, other versions should work, but your results may vary!
