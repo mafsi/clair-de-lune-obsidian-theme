@@ -79,7 +79,9 @@
       color: $text-primary !important;
     }
 
-    span.cm-variable {
+    span.cm-variable,
+    span.cm-variable-2,
+    span.cm-variable-3 {
       color: $sky-blue !important;
     }
 
@@ -100,9 +102,18 @@
     }
   }
 
-  .cm-quote {
-    color: $text-gray !important;
+  span.cm-quote {
     font-style: italic;
+  }
+
+  .cm-hmd-frontmatter {
+    &.cm-def {
+      color: rgba($green, 0.8) !important;
+    }
+
+    &.cm-atom {
+      color: $orange !important;
+    }
   }
 }
 
