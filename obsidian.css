@@ -299,7 +299,7 @@
   border: none;
 }
 .markdown-preview-view .markdown-embed .markdown-preview-view {
-  padding: 0px;
+  padding: 0;
 }
 .markdown-preview-view .markdown-embed-link {
   top: 12px;
@@ -399,8 +399,8 @@
 }
 .markdown-preview-view a.external-link {
   background-image: none;
-  background-size: 0px;
-  padding-right: 0px;
+  background-size: 0;
+  padding-right: 0;
 }
 .markdown-preview-view a.internal-link {
   text-decoration: none;
@@ -422,7 +422,7 @@
 .markdown-preview-view ul:not(.contains-task-list) ul:not(.contains-task-list) {
   border-left: 1px solid rgba(122, 136, 207, 0.25);
   margin-left: -12px;
-  padding-inline-start: 42px;
+  padding-inline-start: 35px;
 }
 .markdown-preview-view ul li,
 .markdown-preview-view ol li {
@@ -441,6 +441,7 @@
 }
 .markdown-preview-view .list-collapse-indicator {
   color: #7a88cf;
+  padding-left: 5px;
 }
 .markdown-preview-view li > p {
   display: inline;
@@ -472,6 +473,10 @@ span.math.math-block {
 rect.actor,
 .labelBox {
   fill: #2f334d !important;
+  stroke: #444a73 !important;
+}
+
+.cluster rect {
   stroke: #444a73 !important;
 }
 
@@ -719,6 +724,249 @@ path.relation {
   content: "🌲 EVERGREEN";
 }
 
+.tag {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+}
+
+.tag[href="#drafting"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#drafting"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◩ DRAFTING";
+}
+
+.tag[href="#complete"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#complete"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◼ COMPLETE";
+}
+
+.tag[href="#archived"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#archived"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "◻ ARCHIVED";
+}
+
+.tag[href="#seedling"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#seedling"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌱 SEEDLING";
+}
+
+.tag[href="#evergreen"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#evergreen"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌲 EVERGREEN";
+}
+
+.tag {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  text-transform: uppercase;
+}
+
+.tag[href="#conspect"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#conspect"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🍃 CONSPECT";
+}
+
+.tag[href="#complet"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#complet"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "✍ COMPLET";
+}
+
+.tag[href="#vechi"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#vechi"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🍂 VECHI";
+}
+
+.tag[href="#procesare"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#procesare"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌱 PROCESARE";
+}
+
+.tag[href="#evergreen"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#evergreen"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌲 EVERGREEN";
+}
+
+.tag[href="#literal"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#literal"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "⛔ LITERAL";
+}
+
+.tag[href="#moc"] {
+  font-size: 0;
+  padding: 0;
+}
+.tag[href="#moc"]:after {
+  font-size: var(--font-tag-preview-size);
+  font-weight: 900;
+  background-color: #131421;
+  padding: 3px 5px;
+  border-radius: 5px;
+  letter-spacing: -0.05ch;
+  content: "🌍 MOC";
+}
+
+img.wrap {
+  max-width: 70%;
+  margin: 20px 0;
+}
+
+img.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+img.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+img:responsive {
+  width: 80%;
+  height: auto;
+}
+
+/* Naked Embeds DEATH AU*/
+.markdown-embed-title {
+  display: none;
+}
+
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.markdown-preview-view .markdown-embed-content {
+  max-height: unset;
+}
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-width: 0 4px 6px 0;
+  border-style: solid;
+  border-radius: 0 !important;
+  border-color: var(--background-primary);
+  min-height: 40px;
+}
+
 .markdown-preview-view {
   color: #c0cdf3;
 }
@@ -792,7 +1040,7 @@ button.mod-cta:hover {
 }
 
 body.plugin-sliding-panes .mod-root .workspace-leaf {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px 10px !important;
 }
 body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header {
   border-right: 1px solid rgba(195, 232, 141, 0.5) !important;
@@ -837,6 +1085,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   border-left: none;
 }
 
+.graph-view {
+  /* &.color-circle {
+    }
+  */
+}
 .graph-view.color-line {
   color: #7a88cf;
 }
@@ -1086,6 +1339,21 @@ textarea:hover {
   background-color: transparent;
 }
 
+/* unify background to Graph Controls & remove border */
+.graph-controls {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  padding: 8px 16px 8px 8px;
+  background-color: #1e2030;
+  min-width: 140px;
+  max-width: 240px;
+  border: none;
+  border-radius: 6px;
+  max-height: calc(100% - 16px);
+  overflow: auto;
+}
+
 /* Support for https://github.com/liamcain/obsidian-calendar-plugin */
 #calendar-container {
   --color-text-today: #c3e88d;
@@ -1182,24 +1450,24 @@ textarea:hover {
 
 .todoist-project .todoist-project-title {
   font-weight: 700;
-  margin-block-end: 0px;
+  margin-block-end: 0;
 }
 
 .todoist-section .todoist-section-title {
   font-size: var(--font-todoist-title-size);
   color: #7a88cf;
   font-weight: 700;
-  margin-block-end: 0px;
+  margin-block-end: 0;
 }
 
 .todoist-error {
   border: 1px solid #ff98a4;
   background-color: rgba(255, 152, 164, 0.05);
-  padding: 1em 1em;
-  margin: 1em 0px;
+  padding: 1em;
+  margin: 1em 0;
 }
 .todoist-error p {
-  margin: 0 0 1em 0;
+  margin: 0 0 1em;
   font-weight: 600;
 }
 .todoist-error code {
