@@ -7,10 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2021-06-20
+
+### 🔁 Changes
+ 
+- Changed the style of headers in PDF export mode
+- All font sizes use `em` units. This allows users to configure the font size more easily.
+
 ### 🐛 Bugfixes
 
 - Tasks are now correctly indented.
 - Links in quote elements are hightlighted correctly in edit mode.
+- Aligned collapse arrows next to header elements.
 
 ## [1.5.0] - 2021-01-24
 

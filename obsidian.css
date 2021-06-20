@@ -2,7 +2,7 @@
 :root {
   --default-font: "Inter", sans-serif;
   --font-monospace: "Jetbrains Mono", monospace;
-  --font-editor-size: 11pt;
+  --font-editor-size: 1em;
   --font-editor-linenumbers-size: medium;
   --font-h1-preview-size: 2em;
   --font-h2-preview-size: 1.5em;
@@ -10,10 +10,10 @@
   --font-h4-preview-size: 1em;
   --font-h5-preview-size: 0.875em;
   --font-h6-preview-size: 0.85em;
-  --font-math-preview-size: 18px;
-  --font-tag-preview-size: 9pt;
+  --font-math-preview-size: 1.126em;
+  --font-tag-preview-size: 0.9em;
   --font-hover-preview-size: 0.9em;
-  --font-prompts-size: 14px;
+  --font-prompts-size: 0.875em;
   --font-todoist-title-size: 1em;
   --font-todoist-metadata-size: small;
 }
@@ -329,38 +329,38 @@
   font-size: var(--font-h1-preview-size);
 }
 .markdown-preview-view h1 .heading-collapse-indicator {
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 .markdown-preview-view h2 {
   font-size: var(--font-h2-preview-size);
 }
 .markdown-preview-view h2 .heading-collapse-indicator {
-  padding-top: 10px;
+  /*padding-top: 10px;*/
 }
 .markdown-preview-view h3 {
   font-size: var(--font-h3-preview-size);
 }
 .markdown-preview-view h3 .heading-collapse-indicator {
-  padding-top: 7px;
+  /*padding-top: 7px;*/
 }
 .markdown-preview-view h4 {
   font-size: var(--font-h4-preview-size);
 }
 .markdown-preview-view h4 .heading-collapse-indicator {
-  padding-top: 7px;
+  /* padding-top: 7px;*/
 }
 .markdown-preview-view h5 {
   font-size: var(--font-h5-preview-size);
 }
 .markdown-preview-view h5 .heading-collapse-indicator {
-  padding-top: 5px;
+  /*padding-top: 5px;*/
 }
 .markdown-preview-view h6 {
   font-size: var(--font-h6-preview-size);
   color: #a9b8e8;
 }
 .markdown-preview-view h6 .heading-collapse-indicator {
-  padding-top: 5px;
+  /*padding-top: 5px;*/
 }
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
@@ -969,6 +969,7 @@ img:responsive {
 
 .markdown-preview-view {
   color: #c0cdf3;
+  line-height: normal;
 }
 .markdown-preview-view hr {
   border-color: rgba(122, 136, 207, 0.3);
@@ -977,6 +978,16 @@ img:responsive {
   color: #7a88cf;
 }
 
+@media print {
+  .markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    color: #131421 !important;
+  }
+}
 .modal button:not(.mod-cta):not(.mod-warning),
 .modal.mod-settings button:not(.mod-cta):not(.mod-warning),
 button:not(.mod-cta):not(.mod-warning) {
