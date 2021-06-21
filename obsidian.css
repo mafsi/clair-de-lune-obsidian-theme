@@ -731,85 +731,6 @@ path.relation {
   padding: 3px 5px;
   border-radius: 5px;
   letter-spacing: -0.05ch;
-}
-
-.tag[href="#drafting"] {
-  font-size: 0;
-  padding: 0;
-}
-.tag[href="#drafting"]:after {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
-  content: "◩ DRAFTING";
-}
-
-.tag[href="#complete"] {
-  font-size: 0;
-  padding: 0;
-}
-.tag[href="#complete"]:after {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
-  content: "◼ COMPLETE";
-}
-
-.tag[href="#archived"] {
-  font-size: 0;
-  padding: 0;
-}
-.tag[href="#archived"]:after {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
-  content: "◻ ARCHIVED";
-}
-
-.tag[href="#seedling"] {
-  font-size: 0;
-  padding: 0;
-}
-.tag[href="#seedling"]:after {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
-  content: "🌱 SEEDLING";
-}
-
-.tag[href="#evergreen"] {
-  font-size: 0;
-  padding: 0;
-}
-.tag[href="#evergreen"]:after {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
-  content: "🌲 EVERGREEN";
-}
-
-.tag {
-  font-size: var(--font-tag-preview-size);
-  font-weight: 900;
-  background-color: #131421;
-  padding: 3px 5px;
-  border-radius: 5px;
-  letter-spacing: -0.05ch;
   text-transform: uppercase;
 }
 
@@ -965,6 +886,26 @@ img:responsive {
   border-radius: 0 !important;
   border-color: var(--background-primary);
   min-height: 40px;
+}
+
+/* Naked Embeds DEATH AU*/
+.markdown-embed-title {
+  display: none;
+}
+
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.markdown-preview-view .markdown-embed-content {
+  max-height: unset;
+}
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
 }
 
 .markdown-preview-view {
